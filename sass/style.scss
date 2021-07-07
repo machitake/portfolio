@@ -1,0 +1,156 @@
+
+$color-main: rgb(128, 128, 128);
+
+
+//ブレークポイント
+$layout-width-inner: 1200px;
+$breakpoints: (
+  'sp': '(max-width: 767px)', //767px以下（スマホ）用の表示
+  'tab': '(min-width: 768px) and (max-width: #{$layout-width-inner})',//767px以下かつ$layout-width-inner以下
+  'pc': '(min-width: #{$layout-width-inner})', //$layout-width-inner以上（タブレット・PC）用の表示
+) ;
+
+//メディアクエリ
+@mixin mq($breakpoint: sp) {
+      @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+      }
+}
+
+
+//ハンバーガーメニュー
+.noscroll{
+  overflow: hidden;//スクロールさせない
+}
+
+//ハンバーガーメニュー
+
+.burger {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+
+  // &:hover {
+  //   opacity: 0.4;
+  // }バツ表示の際動作がおかしい
+
+}
+
+.burger-btn{
+  display: block;      
+  width: 39px;      
+  height: 39px;      
+  position: relative;      
+  z-index: 3;
+  border:none;    
+}    
+.bar{      
+  width: 35px;      
+  height: 5px;        
+  display: block;      
+  position: absolute;      
+  left: 50%;      
+  transform: translateX(-50%);      
+  background-color: $color-main;     
+}    
+.bar_top{   
+  top: 5px;
+}
+.bar_mid{    
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.bar_bottom{
+  bottom: 4px;
+}
+
+
+
+//ハンバーガーメニュー（バツ）
+.burger-btn.close .bar_top{      
+  transform: translate(-50%,9px) rotate(45deg);      
+  transition: transform .3s;    
+}    
+.burger-btn.close .bar_mid{      
+  opacity: 0;       
+  transition: opacity .3s;    
+}    
+.burger-btn.close .bar_bottom{      
+transform: translate(-50%,-7px) rotate(-45deg);      
+transition: transform .3s;    
+bottom: 13px;
+}
+
+
+//ハンバーガーメニュー全画面表示
+
+.nav-wrapper{      
+  display: none;
+  width: 100vw;      
+  height: 100vh;      
+  position: fixed;      
+  top: 0;      
+  left: 0;       
+  z-index: 2;     
+}     
+.header-nav{        
+  width: 100%;        
+  height: 100%;        
+  background-color: #fff;        
+  z-index: 2;      
+}     
+.nav-list{        
+  display: block;        
+  position: absolute;        
+  top: 50%;        
+  left: 50%;        
+  transform: translate(-50%,-50%);        
+  text-align: center;      
+}      
+.nav-item{        
+  margin-right: 0;        
+  margin-bottom: 15px;   
+  
+  a {
+    display: inline-block;
+    width: 230px;
+    padding: 18px 0;
+    color: $color-main;
+
+    &:hover {
+      
+      background: $color-main;
+      color: #fff;
+    }
+  }
+  
+}
+
+//my_introduction
+
+.my_introduction {
+  background-image: url(../img/top_2.jpg);
+  background-size: cover;
+  position: sticky;
+  top: 0px;
+  z-index: -1;
+  margin: 0px auto;
+  padding: 300px 0px;
+}
+
+.name {
+  letter-spacing: 1px;
+  font-size: 40px;
+  margin: 0px auto;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.worker_type {
+  font-size: 16px;
+  margin: 10px 0px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.1;
+}
