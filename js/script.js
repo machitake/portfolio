@@ -7,6 +7,12 @@
       $('body').toggleClass('noscroll');//スクロールさせない
     });
 
+  $('.nav-item').on('click',function(){ //.nav-itemをクリックすると
+
+      $('.burger-btn').toggleClass('close'); //.burger-btnにcloseというclassを追加/削除する
+      $('.nav-wrapper').fadeToggle(500); //.nav-wrapperがフェードイン/フェードアウトする
+      $('body').toggleClass('noscroll');//スクロールさせない
+    });
 
 
   //スライダー

@@ -27,9 +27,10 @@ $breakpoints: (
 //ハンバーガーメニュー
 
 .burger {
-  position: absolute;
+  position: fixed;
   right: 25px;
   top: 20px;
+  z-index: 999;
 
   // &:hover {
   //   opacity: 0.4;
