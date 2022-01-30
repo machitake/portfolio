@@ -156,12 +156,21 @@ bottom: 13px;
   h1 {
     font-size: 48px;
     display: inline-block;
+
+    @include mq('sp') {
+      font-size: 36px;
+    }
   }
 
   img {
     width: 50px;
     height: 50px;
     margin-top: 10px;
+
+    @include mq('sp') {
+      width: 36px;
+      height: 36px;
+    }
   }
 }
 
@@ -236,6 +245,10 @@ bottom: 13px;
   margin: 0 auto;
   padding: 50px 0;
   text-align: left;
+
+  @include mq('sp') {
+    padding-top: 0;
+  }
 }
 
 .strength {
@@ -421,6 +434,10 @@ bottom: 13px;
   width: 90%;
   height: auto;
   opacity: 0;
+
+  @include mq('sp') {
+    margin: 60px auto;
+  }
 }
 
 .card_bottom-item {
@@ -533,6 +550,10 @@ footer {
   h2 {
     font-size: 48px;
     margin-bottom: 56px;
+
+    @include mq('sp') {
+      font-size: 36px;
+    }
   }
 }
 
@@ -571,7 +592,6 @@ accordion
     position: absolute;
     top: 50%;
     right: 16px;
-    width: 40px;
     height: 40px;
     background: $color-bg-primary;
     border-radius: 50%;
@@ -586,13 +606,17 @@ accordion
        margin: auto;
        box-sizing: border-box;
        vertical-align: middle;
-
        border-top: 2px solid $color-main;
        width: 20px;
        height: 0;
        top: 0;
        bottom: 0;
        right: 9px;
+
+       @include mq('sp') {
+         width: 15px;
+         right: 0px;
+       }
      }
 
      &::after { //+の縦線
@@ -601,7 +625,6 @@ accordion
        margin: auto;
        box-sizing: border-box;
        vertical-align: middle;
-
        border-left: 2px solid $color-main;
        width: 0;
        height: 20px;
@@ -609,6 +632,11 @@ accordion
        bottom: 0;
        right: 18px;
        transition: .3s;
+
+       @include mq('sp') {
+        height: 15px;
+        right: 6px;
+      }
      }
   }
 }
@@ -641,6 +669,11 @@ accordion
       width: 100%;
     }
   }
+}
+
+.p-faq__q-txt {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .open.ac_inner {
