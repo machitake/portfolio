@@ -31,5 +31,14 @@
               slidesToShow:1,
           }
       },
-  ]
-});
+    ]
+  });
+
+  //wow
+  new WOW().init();
+
+  //accordion
+  $('.accordion_one .ac_header').click(function(){
+    $(this).next('.ac_inner').slideToggle();//スライドさせながら表示
+    $(this).toggleClass("open"); //クラス名(open)の CSS がある場合は削除を行い、なければ追加する
+  });

@@ -6,6 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>machitake portfolio</title>
         
+        <script src="./js/wow.min.js"></script>
+        <link rel="stylesheet" href="./css/animate.css">
+
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link type="text/css" rel="stylesheet" href="./css/silk/slick.css">
@@ -13,15 +18,11 @@
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
 
-        
-
-
     </head>
 
     <body>
 
         <header>
-
             <div class="nav-wrapper"><!-- ナビゲーションメニュー(全画面) -->
                 <nav class="header-nav">
                   <ul class="nav-list">
@@ -36,7 +37,7 @@
             </div>
 
             
-            <div class="burger">
+            <div class="burger wow fadeInUp">
                 <div class="burger-btn"><!-- ハンバーガーボタン -->
                     <span class="bar bar_top"></span>
                     <span class="bar bar_mid"></span>
@@ -45,136 +46,15 @@
             </div>
         </header>
 
-        <div class="my_introduction">
-                <h1 class="name">Machitake's Portfolio</h1>
-                <h2 class="worker_type">-- Web Designer --</h2>
-        </div>
-
         <div class="main_content">
-            <div class="greetings" id='about'>
-
-                <div class="portfolio_title">
-                    <img src="https://github.com/machitake/portfolio/blob/master/img/about-icon.png?raw=true" alt="about-icon">
-                    <h1>About Me</h1>
-                </div>
-
-                <div class="portfolio_img">
-                    <img src="https://github.com/machitake/portfolio/blob/master/img/icon_2.PNG?raw=true" alt="">
-                </div>
-
-                <div class="portfolio_text">
-                    <p>
-                        Webデザイナーのまちたけです。Webサイトを通じてお客様同士の思いをつなぐ架け橋を作りたいと考えています。
-                    </p>
-                </div>
-            </div>
-
-            <div class="strength_section" id="strength">
-                <div class="sub_title">
-                    <h1 data-en="Strength">強み</h1>
-                </div>
-
-                <div class="introduction_text">
-                    
-                    <h2 class="strength" data-en="Proactivity">自発的な提案</h2>
-                    <p>
-                        Webサイトのデザインは、お客様とユーザーとをつなぐ大切な役割を担います。
-                        そのことを理解し、お客様のご要望に沿ったデザインを制作いたします。
-                        お客様の要望を超える提案ができるよう日々勉強に取り組んでいます。
-                    </p>
-                    
-                    <h2 class="strength" data-en="Speed">即返答、即対応</h2>
-                    <p>
-                        お客様とスムーズなコミュニケーションが取れるよう即返答、即対応を意識しています。気軽にTwitterでのDMでお問い合わせください。
-                    </p>
-                    
-                    <h2 class="strength" data-en="Follow-up">アフターフォロー</h2>
-                    <p>
-                        最後まで責任を持って仕事に取り組むため、初期不良対応や使い方サポートを行います
-                    </p>
-                </div>
-            </div>
-
-            <div class="skill_section" id="skill">
-                <div class="sub_title">
-                    <h1 data-en="Skillset">スキル</h1>
-                </div>
-
-                <div class="introduction_text">
-                    <ul>
-                        <li class="skill">
-                            <img src="img/html.png" alt="">
-                            <h2>HTML</h2>
-                            <p>Level: ★★★★☆</p>
-                            <p>お客様の要望、意図を読み取り、計画的にマークアップいたします。</p>
-                        </li>
-                        <li class="skill">
-                            <img src="img/css.png" alt="">
-                            <h2>css</h2>
-                            <p>Level: ★★★★☆</p>
-                            <p>SCSSやBootstrapを使い効率的に保守性の高いサイトを作ります。レスポンシブデザイン対応。</p>
-                        </li>
-                        <li class="skill">
-                            <img src="img/jquery-1.png" alt="">
-                            <h2>jquery</h2>
-                            <p>Level: ★★★☆☆</p>
-                            <p>サイトに動きをつけるアニメーションを実装できます</p>
-                        </li>
-                        <li class="skill">
-                            <img src="img/wordpress.png" alt="">
-                            <h2>WordPress</h2>
-                            <p>Level: ★☆☆☆☆</p>
-                            <p>希望であればWordPressでの環境構築も行います。</p>
-                        </li>
-                        <!-- <li class="skill">
-                            <img src="img/bootstrap.svg" alt="">
-                            <h2>bootstrap</h2>
-                            <p>Level: ★★★☆☆</p>
-                            <p>効率的にサイトを作り上げます。レスポンシブ対応</p>
-                        </li> -->
-                    </ul>
-
-                </div>
-            </div>
-
-            <div class="service_section" id="service">
-                <div class="portfolio_title"> 
-                    <img src="https://github.com/machitake/portfolio/blob/master/img/earth.png?raw=true" alt="about-icon"> 
-                    <h1>Service</h1>
-                </div>
-
-                <div class="introduction_text">
-                    <ul>
-                        <li class="service_item">
-                            <img src="img/coding.png" alt="">
-                            <h2>コーディング</h2>
-                            <p>お客様からお預かりしたデザインデータをもとに丁寧にコーディングいたします。</p>
-                        </li>
-
-                        <li class="service_item">
-                        <img src="img/lp.png" alt="">
-                            <h2>LP製作</h2>
-                            <p>デザインからコーディングまでお客様のご要望に添って適切に制作いたします。</p>
-                        </li>
-
-                        <li class="service_item">
-                            <img src="img/web.png" alt="">
-                            <h2>Webサイト製作</h2>
-                            <p>お客様からお預かりしたデザインデータをもとに丁寧にコーディングいたします。</p>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-
 
             <div class="portfolio_section" id="work">
-                <div class="portfolio_title">  
+                <div class="portfolio_title wow fadeInUp">  
                     <img src="https://github.com/machitake/portfolio/blob/master/img/work.png?raw=true" alt="about-icon">
-                    <h1>Work</h1>
+                    <h1>制作実績</h1>
                 </div>
 
-                <div class="slider">
+                <div class="slider wow fadeInUp">
                     <div class="card_bottom-item">
                         <a href="https://machitake.github.io/sample/"><img src="./img/melinda.png" alt=""></a>
                     </div>
@@ -199,29 +79,203 @@
                 </div>
 
             </div>
+            
+            <div class="skill_section" id="skill">
+                <div class="sub_title  wow fadeInUp">
+                    <h1 data-en="Skillset">スキル</h1>
+                </div>
+
+                <div class="introduction_text">
+                    <ul>
+                        <li class="skill wow fadeInUp">
+                            <div class="skill-img">
+                                <img src="img/html.png" alt="">
+                            </div>
+                            <h2>HTML</h2>
+                            <p>お客様の要望、意図を読み取り、計画的にマークアップいたします。</p>
+                        </li>
+                        <li class="skill wow fadeInUp">
+                            <div class="skill-img">
+                                <img src="img/css.png" alt="">
+                            </div>
+                            <h2>css</h2>
+                            <p>SCSSを使い効率的に保守性の高いサイトを作ります。レスポンシブデザイン対応。パーフェクトピクセルでコーディングいたします</p>
+                        </li>
+                        <li class="skill wow fadeInUp">
+                            <div class="skill-img">
+                                <img src="img/jquery-1.png" alt="">
+                            </div>
+                            <h2>jquery</h2>
+                            <p>ドロワー、アコーディオン、スライダー、モーダル…などサイトに動きをつけれます。</p>
+                        </li>
+                        <li class="skill wow fadeInUp">
+                            <div class="skill-img">
+                                <img src="img/wordpress.png" alt="">
+                            </div>
+                            <h2>WordPress</h2>
+                            <p>希望であればWordPressでの環境構築も行います。</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="greetings" id='about'>
+
+                <div class="portfolio_title wow fadeInUp">
+                    <img src="https://github.com/machitake/portfolio/blob/master/img/about-icon.png?raw=true" alt="about-icon">
+                    <h1>自己紹介</h1>
+                </div>
+
+                <div class="portfolio-container wow fadeInUp">
+                    <div class="portfolio_img">
+                        <img src="https://github.com/machitake/portfolio/blob/master/img/icon_2.PNG?raw=true" alt="">
+                    </div>
+    
+                    <div class="portfolio_text">
+                        <p>
+                            Web制作を行なっているまちたけです。保守性の高いコーディングとデザインを忠実に再現したパーフェクトピクセルを意識しています。お客様の力に少しでもなれるよう精一杯やっていきたいと思います。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service_section" id="service">
+                <div class="portfolio_title  wow fadeInUp"> 
+                    <img src="https://github.com/machitake/portfolio/blob/master/img/earth.png?raw=true" alt="about-icon"> 
+                    <h1>サービス</h1>
+                </div>
+
+                <div class="introduction_text">
+                    <ul>
+                        <li class="service_item  wow fadeInUp">
+                            <img src="img/coding.png" alt="">
+                            <h2>コーディング</h2>
+                            <span>料金:30000~</span>
+                            <p>お客様からお預かりしたデザインデータをもとに丁寧にコーディングいたします。</p>
+                        </li>
+
+                        <li class="service_item  wow fadeInUp">
+                        <img src="img/lp.png" alt="">
+                            <h2>LP製作</h2>
+                            <span>料金:50000~</span>
+                            <p>デザインからコーディングまでお客様のご要望に添って適切に制作いたします。</p>
+                        </li>
+
+                        <li class="service_item  wow fadeInUp">
+                            <img src="img/web.png" alt="">
+                            <h2>Webサイト製作</h2>
+                            <span>料金:100000~</span>
+                            <p>お客様からお預かりしたデザインデータをもとに丁寧にコーディングいたします。</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <section class="question q_position inner">
+
+                <h2 class="util-title wow fadeInUp">Q&A</h2>
+            
+            
+                <div class="accordion_area gutter wow fadeInUp">
+            
+                    <div class="accordion_one">
+                        <div class="ac_header">
+                            <div class="p-faq__headinner">
+                            <p class="p-faq__q-txt">どのような案件でも最後までやりきれますか？</p>
+                            </div>
+                            <div class="i_box"></div>
+                        </div>
+                        <div class="ac_inner">
+                            <div class="p-faq__bodyinner">
+                            <p class="p-faq__a-txt">はい。分からないことは徹底的に調べ、自力で解決できない場合は素直に先輩を頼るという姿勢で取り組んでいます。
+                                また時間がかかりそうな場合は、直ちに依頼者様に連絡して判断を仰ぐことを心掛けています。</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="accordion_one">
+                        <div class="ac_header">
+                            <div class="p-faq__headinner">
+                            <p class="p-faq__q-txt">WordPressのカスタマイズは可能ですか？</p>
+                            </div>
+                            <div class="i_box"></div>
+                        </div>
+                        <div class="ac_inner">
+                            <div class="p-faq__bodyinner">
+                            <p class="p-faq__a-txt">可能です。テーマやプラグインの導入・カスタマイズはもちろん、サーバ設定もお任せください</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion_one">
+                        <div class="ac_header">
+                            <div class="p-faq__headinner">
+                            <p class="p-faq__q-txt">連絡手段はどんなものがありますか？</p>
+                            </div>
+                            <div class="i_box"></div>
+                        </div>
+                        <div class="ac_inner">
+                            <div class="p-faq__bodyinner">
+                            <p class="p-faq__a-txt">Chatwork、Slack、Zoom、Gmailに対応可能です。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion_one">
+                        <div class="ac_header">
+                            <div class="p-faq__headinner">
+                            <p class="p-faq__q-txt">アフターフォローはどんなものがありますか？</p>
+                            </div>
+                            <div class="i_box"></div>
+                        </div>
+                        <div class="ac_inner">
+                            <div class="p-faq__bodyinner">
+                            <p class="p-faq__a-txt">納品後、1ヶ月以内に不具合があった場合は無料で対応いたします</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="accordion_one">
+                        <div class="ac_header">
+                            <div class="p-faq__headinner">
+                            <p class="p-faq__q-txt">LINE登録するのが少し怖いです。無理な勧誘などありますか？</p>
+                            </div>
+                            <div class="i_box"></div>
+                        </div>
+                        <div class="ac_inner">
+                            <div class="p-faq__bodyinner">
+                            <p class="p-faq__a-txt">LINE登録後、お客様のダイエットに役立つLINEマガジンを週1度のペースで配信させていただい
+                                ておりますが不要でしたらいつでもブロック可能でございます。
+                                無理な勧誘は一切ございませんのでご安心ください。</p>
+                            </div>
+                        </div>
+                    </div>
+             -->
+                </div>
+            
+            
+            </section>
+            <!-- /.Question -->
+
 
             
-
-
-
         </div>
 
         <footer id="contact">
-            <div class="portfolio_title">  
+            <div class="portfolio_title  wow fadeInUp">  
                 <img src="https://github.com/machitake/portfolio/blob/master/img/work.png?raw=true" alt="about-icon">
-                <h1>Contact</h1>
+                <h1>お問い合わせ</h1>
             </div>
 
-            <div class="contact_warapper">
+            <div class="contact_warapper  wow fadeInUp">
                 <div class="contact-left">
                     <p class="contact_text">
                         ご依頼やご相談は【TwitterのDM】よりお願いいたします
                     </p>
                 </div>
     
-                <div class="contact-right">
+                <div class="contact-right  wow fadeInUp">
                     <ul class="follow-me">
-                        <li><a href="https://twitter.com/machitake__" class="twitter"></a></li>
+                        <li><a href="https://twitter.com/machitake__" class="twitter"><i class="fab fa-twitter fa-2x"></i></a></li>
                     </ul>
                 </div>
             </div>
