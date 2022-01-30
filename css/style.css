@@ -377,6 +377,30 @@
   height: auto;
 }
 
+.card_bottom-item a:hover {
+  color: #333;
+  opacity: 0.7;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.card_bottom-item .card_bottom-item-text {
+  width: 90%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.card_bottom-item .card_bottom-item-text:hover {
+  color: #333;
+  opacity: 0.7;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.card_bottom-item .card_bottom-item-text h3 {
+  padding-top: 10px;
+}
+
 /*slick setting*/
 .slick-prev:before,
 .slick-next:before {
