@@ -60,7 +60,8 @@ $breakpoints: (
   display: block;      
   position: absolute;      
   left: 50%;      
-  transform: translateX(-50%);      
+  transform: translateX(-50%);  
+  transition: transform .3s;     
   background-color: $color-main;     
 }    
 .bar_top{   
@@ -205,7 +206,9 @@ bottom: 13px;
   text-align: left;
 
   @include mq('sp') {
+    padding: 0;
     margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -310,6 +313,8 @@ bottom: 13px;
   @include mq('sp') {
     width: 90%;
     margin: 0 auto;
+    padding: 0;
+    padding-top: 40px;
   }
 
   img {
@@ -381,13 +386,23 @@ bottom: 13px;
   padding: 0 50px;
   margin: 10px;
 
+  &:not(:first-child) {
+    margin-top: 40px;
+  }
+
   @include mq('sp') {
+    margin: 0 auto;
+    padding: 0 10px;
     width: 100%;
   }
 
   img {
     width: 200px;
     margin: 0 auto;
+
+    @include mq('sp') {
+      text-align: center;
+    }
 
     &:hover {
       transform: translateY(-5px);
@@ -416,6 +431,10 @@ bottom: 13px;
   p {
     margin: 20px 0 10px;
   }
+}
+
+.service-img {
+  text-align: center;
 }
 
 
